@@ -1,0 +1,34 @@
+html, body { 
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Montserrat';
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+:root {
+    /* Сделать цвета мягче, как на презентации */
+    --qdeep-orange: #F55F20;
+    --qdeep-background: #343434;
+    --qdeep-black: #000000;
+    --qdeep-white: #FFFFFF;
+    --qdeep-bright-orange: #FF4D00;
+    --qdeep-sidebar: #1C1C1C;
+}
+
+.header {
+    display: flex;
+    background-color: var(--qdeep-black);
+    height: 100px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body {
+    background-color: var(--qdeep-background);
+    flex: 1;
+}
