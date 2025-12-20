@@ -33,4 +33,12 @@
     .learn_button button:hover {
         background-color: var(--qdeep-bright-orange);
     }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .people {
+        flex-direction: column;
+    }
 }

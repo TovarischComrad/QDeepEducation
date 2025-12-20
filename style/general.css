@@ -1,7 +1,7 @@
 html, body { 
     margin: 0;
     padding: 0;
-    height: 100%;
+    min-height: 100vh;
     font-family: 'Montserrat';
 }
 
@@ -11,11 +11,10 @@ body {
 }
 
 :root {
-    /* Сделать цвета мягче, как на презентации */
     --qdeep-orange: #F55F20;
     --qdeep-background: #343434;
-    --qdeep-black: #000000;
-    --qdeep-white: #FFFFFF;
+    --qdeep-black: #1D1D1D;
+    --qdeep-white: #E6E7EB;
     --qdeep-bright-orange: #FF4D00;
     --qdeep-sidebar: #1C1C1C;
 }
@@ -23,12 +22,139 @@ body {
 .header {
     display: flex;
     background-color: var(--qdeep-black);
-    height: 100px;
+    min-height: 100px;
     flex-direction: row;
     align-items: center;
 }
 
-.body {
+.start_page {
     background-color: var(--qdeep-background);
     flex: 1;
+    height: 100%;
+}
+
+.learn_page {
+    background-color: var(--qdeep-background);
+}
+
+.sidebar h2 { 
+    display: inline-block;
+    color: var(--qdeep-orange);
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.sidebar h2:hover {
+    color: var(--qdeep-bright-orange);
+    text-decoration: underline;
+}
+
+.content p {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 14pt;
+    line-height: 1.7;
+    color: var(--qdeep-white);
+    text-align: justify;
+}
+
+.chapter h1 {
+    margin: 20px;
+    text-align: center;
+    font-size: 18pt;
+    color: var(--qdeep-white);
+    max-width: 100%;   
+}
+
+.qa, .gate {
+    margin-top: 20px;
+    height: 180px;
+}
+
+.ttn {
+    height: 90px;
+}
+
+.chapter {
+    display: flex;
+    margin: 50px;
+    width: 375px;
+    height: 350px;
+    background-color: var(--qdeep-black);
+    flex-direction: column;
+}
+
+.chapter_title {
+    height: 75px;
+}
+
+.courses {
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+
+.promo_image {
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h1 {
+    color: var(--qdeep-white);
+    margin-left: 25px;
+}
+
+.people {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.person {
+    display: flex;
+    width: 225px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person img {
+    height: 300px;
+}
+
+.person h3 {
+    text-align: center;
+    color: var(--qdeep-white);
+}
+
+
+.qubo-demo {
+    border: 1px solid var(--qdeep-white);
+    color:var(--qdeep-white);
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.qubo-demo td {
+    padding: 10px;
+    border: 1px solid var(--qdeep-white);
+}
+
+.qubo-demo th {
+    padding: 10px;
+    border: 1px solid var(--qdeep-white);
+}
+
+.div-qubo-demo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.math {
+    overflow-x: auto;
+    max-width: 100%;
 }

@@ -1,50 +1,8 @@
 @media only screen and (min-width: 650px) { 
 
-
     .courses {
-        display: flex;
         flex-direction: row;
-        height: 500px;
-        margin-top: 50px;
         justify-content: center;
-        align-items: center;
-    }
-
-    .chapter {
-        display: flex;
-        margin: 50px;
-        width: 375px;
-        height: 350px;
-        background-color: var(--qdeep-black);
-        flex-direction: column;
-    }
-
-    .chapter h1 {
-        margin: 20px;
-        text-align: center;
-        font-size: 18pt;
-        color: var(--qdeep-white);
-        max-width: 100%;   
-    }
-
-    .chapter_title {
-        height: 75px;
-    }
-
-    .promo_image {
-        display: flex;
-        height: 200px;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .qa, .gate {
-        margin-top: 20px;
-        height: 180px;
-    }
-
-    .ttn {
-        height: 90px;
     }
 
     .learn_button {
@@ -72,20 +30,13 @@
 
 
     .logo img {
-        height: 70px;
-        margin-left: 25px;
-    }
-
-    .logo h1 {
-        color: var(--qdeep-white);
-        font-size: 36pt;
+        height: 65px;
         margin-left: 15px;
-        margin-top: 40px;
     }
 
     /* -------------------------------------- */
 
-    .body_content {
+    .learn_page {
         display: flex;
         flex: 1;
         flex-direction: row;
@@ -105,78 +56,10 @@
         cursor: pointer;
     }
 
-    .content h1 {
-        color: var(--qdeep-white);
-        margin-left: 25px;
-    }
-
-    .content p {
-        margin-left: 25px;
-        margin-right: 25px;
-        font-size: 14pt;
-        line-height: 1.7;
-        color: var(--qdeep-white);
-        text-align: justify;
-    }
-
-    .sidebar h2 { 
-        display: inline-block;
-        color: var(--qdeep-orange);
-        margin-left: 25px;
-        cursor: pointer;
-    }
-
-    .sidebar h2:hover {
-        color: var(--qdeep-bright-orange);
-        text-decoration: underline;
-    }
+    
 
     .people {
-        display: flex;
         flex-direction: row;
-        /* height: 300px; */
-        justify-content: center;
-        align-items: center;
         gap: 120px;
-    }
-
-    .person {
-        display: flex;
-        width: 150px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .person img {
-        height: 300px;
-    }
-
-    .person h3 {
-        text-align: center;
-        color: var(--qdeep-white);
-    }
-
-    .qubo-demo {
-        border: 1px solid var(--qdeep-white);
-        color:var(--qdeep-white);
-        text-align: center;
-        border-collapse: collapse;
-    }
-
-    .qubo-demo td {
-        padding: 10px;
-        border: 1px solid var(--qdeep-white);
-    }
-
-    .qubo-demo th {
-        padding: 10px;
-        border: 1px solid var(--qdeep-white);
-    }
-
-    .div-qubo-demo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 }
