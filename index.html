@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    <!-- Style -->
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/desktop.css">
     <link rel="stylesheet" href="style/mobile.css">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Scripts -->
+    <script src="js/header.js"></script>
 </head>
 <body>
-    <!-- TODO Вынести блок header в отдельный тег <header> -->
-    <div class="header">
-        <div class="logo">
-            <img src="source/qdeep_edu.png">
-        </div>
-    </div>
+    <header-component></header-component>
+    
     <div class="start_page">
         <div class="courses">
             <div class="chapter">
@@ -25,7 +26,7 @@
                     <img class="qa" src="source/qa_logo.jpg">
                 </div>
                 <div class="learn_button">
-                    <button onclick="window.location.href='introduction.html'">Изучить</button>
+                    <button onclick="window.location.href='html/introduction.html'">Изучить</button>
                 </div>
             </div>
             <div class="chapter">
