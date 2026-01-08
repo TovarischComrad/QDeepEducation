@@ -56,10 +56,12 @@
         cursor: pointer;
     }
 
-    
-
     .people {
         flex-direction: row;
         gap: 120px;
     }
+
+    /* .history {
+        flex-direction: column;
+    } */
 }

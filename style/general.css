@@ -1,3 +1,13 @@
+:root {
+    --qdeep-orange: #F55F20;
+    --qdeep-background: #343434;
+    --qdeep-black: #1D1D1D;
+    --qdeep-white: #E6E7EB;
+    --qdeep-bright-orange: #FF4D00;
+    --qdeep-sidebar: #1C1C1C;
+    --qdeep-history: #FFC691;
+}
+
 html, body { 
     margin: 0;
     padding: 0;
@@ -10,13 +20,8 @@ body {
     flex-direction: column;
 }
 
-:root {
-    --qdeep-orange: #F55F20;
-    --qdeep-background: #343434;
-    --qdeep-black: #1D1D1D;
-    --qdeep-white: #E6E7EB;
-    --qdeep-bright-orange: #FF4D00;
-    --qdeep-sidebar: #1C1C1C;
+ol, ul {
+    color: var(--qdeep-white);
 }
 
 .header {
@@ -49,7 +54,7 @@ body {
     text-decoration: underline;
 }
 
-.content p {
+.content {
     margin-left: 25px;
     margin-right: 25px;
     font-size: 14pt;
@@ -57,6 +62,15 @@ body {
     color: var(--qdeep-white);
     text-align: justify;
 }
+
+/* .content p {
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 14pt;
+    line-height: 1.7;
+    color: var(--qdeep-white);
+    text-align: justify;
+} */
 
 .chapter h1 {
     margin: 20px;
@@ -101,10 +115,10 @@ body {
     align-items: center;
 }
 
-.content h1 {
+/* .content h1, h2, h3 {
     color: var(--qdeep-white);
     margin-left: 25px;
-}
+} */
 
 .people {
     display: flex;
@@ -129,7 +143,6 @@ body {
     text-align: center;
     color: var(--qdeep-white);
 }
-
 
 .qubo-demo {
     border: 1px solid var(--qdeep-white);
@@ -160,3 +173,40 @@ body {
     overflow-x: auto;
     max-width: 100%;
 }
+
+.history {
+    margin: 25px;
+    padding: 15px;
+    color: var(--qdeep-black);
+    background-color: var(--qdeep-history);
+    display: flex;
+
+}
+
+.history img {
+    width: 200px;
+    margin-right: 25px;
+}
+
+.proof {
+    border-left: 2px solid var(--qdeep-bright-orange);
+    padding-left: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    /* margin: 25px; */
+}
+
+.qed {
+    text-align: right;
+}
+
+.figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+/* .figure img {
+    width: 300px;
+} */
