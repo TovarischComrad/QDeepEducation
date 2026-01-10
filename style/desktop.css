@@ -50,6 +50,8 @@
     .content {
         flex: 1;
         background-color: var(--qdeep-background);
+        font-size: 14pt;
+        text-align: justify;
     }
 
     .logo_link {
