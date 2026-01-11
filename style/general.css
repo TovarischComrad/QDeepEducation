@@ -6,6 +6,7 @@
     --qdeep-bright-orange: #FF4D00;
     --qdeep-sidebar: #1C1C1C;
     --qdeep-history: #FFC691;
+    --qdeep-inactive: #bc6d4c;
 }
 
 html, body { 
@@ -23,6 +24,10 @@ body {
 ol, ul {
     color: var(--qdeep-white);
 }
+/* 
+.start {
+    min-width: fit-content;
+} */
 
 .header {
     display: flex;
@@ -33,9 +38,13 @@ ol, ul {
 }
 
 .start_page {
+    display: flex;
     background-color: var(--qdeep-background);
     flex: 1;
     height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .learn_page {
@@ -102,7 +111,7 @@ ol, ul {
 
 .courses {
     display: flex;
-    margin-top: 50px;
+    /* margin-top: 25px; */
     align-items: center;
 }
 
@@ -173,12 +182,12 @@ ol, ul {
 }
 
 .history {
-    margin: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding: 15px;
     color: var(--qdeep-black);
     background-color: var(--qdeep-history);
     display: flex;
-
 }
 
 .history img {
@@ -223,6 +232,19 @@ ol, ul {
     height: 40px;
     width: auto;
 }
-/* .figure img {
-    width: 300px;
-} */
+
+.seminars {
+    max-width: 375px;
+    margin-top: 25px;
+    width: 500px;
+    display: flex;
+    background-color: var(--qdeep-black);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seminars h1 {
+    font-size: 18pt;
+    color: var(--qdeep-white);
+}
